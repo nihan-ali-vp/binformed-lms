@@ -39,19 +39,10 @@
         color: white;
       }
     </style>
-    <!-- Fix for GitHub Pages MIME type issue -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  </head>
+
+</head>
   <body>
     <div id="root"></div>
-    <script>
-      // Fallback message if JS fails to load
-      window.addEventListener('error', function(e) {
-        if (!document.querySelector('#root').children.length) {
-          document.querySelector('#root').innerHTML = '<p style="color: red; padding: 20px;">Error loading application. Please check console for details.</p>';
-        }
-      });
-    </script>
   <script type="module" src="/index.tsx"></script>
 </body>
 </html>

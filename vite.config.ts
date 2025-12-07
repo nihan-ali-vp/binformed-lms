@@ -6,28 +6,9 @@ export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
       base: '/',
-      publicDir: 'public',
       server: {
         port: 3000,
         host: '0.0.0.0',
-        mimeTypes: {
-          '.js': 'application/javascript',
-          '.jsx': 'application/javascript'
-        }
-      },
-      build: {
-        outDir: 'dist',
-        assetsDir: 'assets',
-        sourcemap: false,
-        minify: 'esbuild',
-        target: 'esnext',
-        rollupOptions: {
-          output: {
-            entryFileNames: 'assets/[name]-[hash].js',
-            chunkFileNames: 'assets/[name]-[hash].js',
-            assetFileNames: 'assets/[name]-[hash].[ext]'
-          }
-        }
       },
       plugins: [react()],
       define: {
