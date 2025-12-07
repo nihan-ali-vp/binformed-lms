@@ -20,7 +20,14 @@ export default defineConfig(({ mode }) => {
         assetsDir: 'assets',
         sourcemap: false,
         minify: 'esbuild',
-        target: 'esnext'
+        target: 'esnext',
+        rollupOptions: {
+          output: {
+            entryFileNames: 'assets/[name]-[hash].js',
+            chunkFileNames: 'assets/[name]-[hash].js',
+            assetFileNames: 'assets/[name]-[hash].[ext]'
+          }
+        }
       },
       plugins: [react()],
       define: {
