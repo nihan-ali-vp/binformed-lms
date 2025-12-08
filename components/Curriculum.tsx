@@ -47,7 +47,7 @@ const Curriculum: React.FC = () => {
             </p>
           </div>
           <button className="hidden md:block text-brand-400 font-semibold hover:text-brand-300 transition-colors">
-            Download Syllabus &rarr;
+             
           </button>
         </div>
 
@@ -75,7 +75,7 @@ const Curriculum: React.FC = () => {
 
         <div className="mt-12 text-center md:hidden">
           <button className="text-brand-400 font-semibold hover:text-brand-300 transition-colors">
-            Download Syllabus &rarr;
+             &rarr;
           </button>
         </div>
       </div>

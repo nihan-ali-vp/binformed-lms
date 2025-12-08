@@ -76,20 +76,7 @@ const Features: React.FC = () => {
           ))}
         </motion.div>
 
-        {/* Stats Strip */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-slate-800 pt-12">
-            {[
-                { label: "Students Mentored", value: "500+" },
-                { label: "Job Offers", value: "92%" },
-                { label: "Practical Projects", value: "50+" },
-                { label: "Rating", value: "4.9/5" },
-            ].map((stat, i) => (
-                <div key={i} className="text-center">
-                    <div className="text-3xl font-bold text-white mb-2">{stat.value}</div>
-                    <div className="text-sm text-slate-500 uppercase tracking-wider font-semibold">{stat.label}</div>
-                </div>
-            ))}
-        </div>
+ 
       </div>
     </section>
   );

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Rocket, Twitter, Linkedin, Instagram, Github } from 'lucide-react';
+import { href } from 'react-router-dom';
+
 
 const Footer: React.FC = () => {
   return (
@@ -17,11 +19,18 @@ const Footer: React.FC = () => {
               Binformed helps students and professionals learn smarter — not harder. Empowering you with skills that matter.
             </p>
             <div className="flex gap-4">
-              {[Twitter, Linkedin, Instagram, Github].map((Icon, i) => (
-                <a key={i} href="#" className="text-slate-500 hover:text-white transition-colors">
-                  <Icon className="w-5 h-5" />
-                </a>
-              ))}
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-white transition-colors" title="Follow us on Twitter">
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-white transition-colors" title="Connect on LinkedIn">
+                <Linkedin className="w-5 h-5" />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-white transition-colors" title="Follow us on Instagram">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-white transition-colors" title="Follow us on GitHub">
+                <Github className="w-5 h-5" />
+              </a>
             </div>
           </div>
 
@@ -49,8 +58,8 @@ const Footer: React.FC = () => {
             <h4 className="text-white font-bold mb-6">Contact</h4>
             <ul className="space-y-4 text-sm text-slate-400">
               <li>info@binformed.com</li>
-              <li>+1 (555) 123-4567</li>
-              <li>San Francisco, CA</li>
+              <li></li>
+              <li></li>
             </ul>
           </div>
         </div>
