@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-white transition-colors" title="Connect on LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-white transition-colors" title="Follow us on Instagram">
+              <a href="https://instagram.com/bin.formed/" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-white transition-colors" title="Follow us on Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-white transition-colors" title="Follow us on GitHub">
