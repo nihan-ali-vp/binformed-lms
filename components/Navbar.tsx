@@ -30,11 +30,11 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 group">
-          <div className="bg-brand-600 p-2 rounded-lg group-hover:bg-brand-500 transition-colors">
-            <Rocket className="text-white w-6 h-6" />
+          <div className="bg-brand-600 p-1 rounded-lg group-hover:bg-brand-500 transition-colors">
+            <img src="/assets/icon.svg" className='w-8 h-8' alt="Loading Icon ...." />
           </div>
           <span className="text-2xl font-bold tracking-tight text-white">
-            Binformed
+            bin.formed
           </span>
         </a>
 
