@@ -1,26 +1,38 @@
+# robots.txt — binformed
+# Purpose: SEO + AI crawler optimization
+
 User-agent: *
 Allow: /
 
-# Block junk / unnecessary paths
-Disallow: /admin
-Disallow: /login
-Disallow: /register
-Disallow: /dashboard
-Disallow: /api/
-Disallow: /*?*
+# Block internal or non-public paths
+Disallow: /admin/
+Disallow: /dashboard/
 Disallow: /private/
+Disallow: /api/
+Disallow: /auth/
 
 # Allow important assets
 Allow: /assets/
-Allow: /*.css$
-Allow: /*.js$
-Allow: /*.png$
-Allow: /*.jpg$
-Allow: /*.jpeg$
-Allow: /*.webp$
-Allow: /*.svg$
-Allow: /*.woff$
-Allow: /*.woff2$
+Allow: /images/
 
-# Sitemap location
+# AI & LLM Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Sitemap
 Sitemap: https://binformed.nihan-vp.me/sitemap.xml

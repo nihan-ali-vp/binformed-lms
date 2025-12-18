@@ -1,120 +1,206 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/assets/favicon.ico" />
-     <!-- SEO Meta Tags -->
-     <meta name="description" content="Binformed is a cutting-edge Master Data Analytics platform that empowers businesses to harness the full potential of their data. Our innovative solutions provide comprehensive insights, streamline data management, and enhance decision-making processes. With Binformed, organizations can achieve greater efficiency, accuracy, and strategic advantage in today's data-driven world." />
-     <meta name="keywords" content="Master Data Analytics, Data Management, Business Intelligence, Data Insights, Data-Driven Decision Making, Data Solutions, Analytics Platform, Data Strategy, Data Integration, Data Quality" />  
-     <meta name="author" content="Binformed" />
-    <meta property="og:title" content="Binformed | Master Data Analytics" />
-    <meta property="og:description" content="Binformed is a cutting-edge Master Data Analytics platform that empowers businesses to harness the full potential of their data. Our innovative solutions provide comprehensive insights, streamline data management, and enhance decision-making processes. With Binformed, organizations can achieve greater efficiency, accuracy, and strategic advantage in today's data-driven world." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://binformed.nihan-vp.me" />
-    <meta property="og:image" content="https://binformed.nihan-vp.me/assets/og-image.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Binformed | Master Data Analytics" />
-    <meta name="twitter:description" content="Binformed is a cutting-edge Master Data Analytics platform that empowers businesses to harness the full potential of their data. Our innovative solutions provide comprehensive insights, streamline data management, and enhance decision-making processes. With Binformed, organizations can achieve greater efficiency, accuracy, and strategic advantage in today's data-driven world." />
-    <meta name="twitter:image" content="https://binformed.nihan-vp.me/assets/og-image.png" />
-    <meta name="twitter:site" content="@binformed" />
-    <meta name="twitter:creator" content="@nihan_vp" />
-    <meta name="robots" content="index, follow" />
+    <title>Binformed - Learning Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Binformed is a professional Data Analyst Course Platform.">
+  <meta name="keywords" content="Data Analyst, Data Analysis, Data Visualization, Machine Learning, Data Science, Python, R, SQL, Excel, Tableau, Power BI, Statistics, Big Data, Business Intelligence, Data Cleaning, Data Wrangling, Data Mining, Predictive Analytics, Data Modeling, Data Reporting">
+  <meta name="author" content="Nihan Ali VP">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  <meta name="yandex" content="index, follow">
+  <meta name="revisit-after" content="7 days">
+  <meta name="language" content="English">
+  <meta name="distribution" content="global">
+  <meta name="rating" content="general">
 
-    <script type="application/ld+json">
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Binformed | Data Analyst Course Platform">
+  <meta property="og:description" content="Professional Data Analyst Course Platform offering comprehensive training in data analysis, visualization, and machine learning techniques.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://binformed.nihan-vp.me/">
+  <meta property="og:image" content="https://binformed.nihan-vp.me/assets/og-image.png">
+  <meta property="og:site_name" content="Binformed">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Binformed | Data Analyst Course Platform">
+  <meta name="twitter:description" content="Professional Data Analyst Course Platform offering comprehensive training in data analysis, visualization, and machine learning techniques.">
+  <meta name="twitter:image" content="https://binformed.nihan-vp.me/assets/profile.jpg">
+
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EXAMPLEID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EXAMPLEID');
+  </script>
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.ico">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://binformed.nihan-vp.me/">
+
+  <!-- Structured Data (JSON-LD) -->
+      <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://binformed.nihan-vp.me/#organization",
-      "name": "Binformed",
-      "url": "https://binformed.nihan-vp.me",
-      "logo": "https://binformed.nihan-vp.me/assets/og-image.png",
-      "description": "Binformed is a cutting-edge Master Data Analytics platform that empowers businesses to harness the full potential of their data through comprehensive insights, streamlined data management, and enhanced decision-making.",
-      "founder": {
-        "@type": "Person",
-        "name": "Nihan VP"
-      },
-      "sameAs": [
-        "https://twitter.com/binformed",
-        "https://twitter.com/nihan_vp"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://binformed.nihan-vp.me/#website",
-      "url": "https://binformed.nihan-vp.me",
-      "name": "Binformed | Master Data Analytics",
-      "description": "Master Data Analytics platform providing business intelligence, data insights, integration, and data-driven decision-making solutions.",
-      "publisher": {
-        "@id": "https://binformed.nihan-vp.me/#organization"
-      },
-      "inLanguage": "en-US"
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://binformed.nihan-vp.me/#homepage",
-      "url": "https://binformed.nihan-vp.me",
-      "name": "Binformed | Master Data Analytics",
-      "isPartOf": {
-        "@id": "https://binformed.nihan-vp.me/#website"
-      },
-      "about": {
-        "@id": "https://binformed.nihan-vp.me/#organization"
-      },
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "url": "https://binformed.nihan-vp.me/assets/og-image.png"
-      },
-      "datePublished": "2024-01-01",
-      "dateModified": "2025-01-01"
+  "@type": "Course",
+  "@id": "https://binformed.com/courses/data-analyst#course",
+  "name": "Professional Data Analyst Course with Real-World Projects",
+  "alternateName": "Job-Oriented Data Analyst Training Program",
+  "description": "The Professional Data Analyst Course by binformed is a comprehensive, job-oriented training program designed to teach practical data analysis skills using SQL, Python, Excel, Power BI, and statistics. The course emphasizes real-world datasets, hands-on projects, dashboards, and portfolio development to prepare learners for entry-level and intermediate data analyst roles.",
+  "url": "https://binformed.com/courses/data-analyst",
+  "inLanguage": "en",
+  "courseMode": [
+    "Online",
+    "Instructor-Led Training"
+  ],
+  "educationalLevel": [
+    "Beginner",
+    "Intermediate"
+  ],
+  "timeRequired": "P3M",
+  "occupationalCredentialAwarded": "Certificate of Course Completion",
+  "provider": {
+    "@type": "Organization",
+    "@id": "https://binformed.com#organization",
+    "name": "binformed",
+    "url": "https://binformed.com",
+    "description": "binformed is a professional training company focused on industry-oriented data analytics education through practical learning and real-world projects.",
+    "sameAs": [
+      "https://binformed.com"
+    ]
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": [
+      "Students",
+      "Aspiring Data Analysts",
+      "Working Professionals",
+      "Career Switchers",
+      "Early-Career Professionals"
+    ]
+  },
+  "teaches": [
+    "SQL for Data Analysis",
+    "Python for Data Analysis",
+    "Advanced Excel for Analytics",
+    "Statistics for Data Analysis",
+    "Data Cleaning and Preparation",
+    "Exploratory Data Analysis (EDA)",
+    "Business Analytics Concepts",
+    "Power BI Data Visualization",
+    "Dashboard Design and Reporting",
+    "Real-World Analytics Projects",
+    "Portfolio Building"
+  ],
+  "learningResourceType": [
+    "Hands-on Projects",
+    "Case Studies",
+    "Practice Exercises",
+    "Assessments"
+  ],
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "Online",
+    "inLanguage": "en",
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://binformed.com/courses/data-analyst"
     }
-  ]
+  },
+  "isAccessibleForFree": false,
+  "keywords": [
+    "Professional Data Analyst Course",
+    "Data Analyst Training",
+    "Data Analytics Course with Projects",
+    "SQL Python Power BI Course",
+    "Job-Oriented Data Analyst Program",
+    "Business Analytics Training"
+  ],
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Data Analytics"
+    },
+    {
+      "@type": "Thing",
+      "name": "Business Intelligence"
+    },
+    {
+      "@type": "Thing",
+      "name": "Data Visualization"
+    }
+  ],
+  "offers": {
+    "@type": "Offer",
+    "category": "Educational Program",
+    "url": "https://binformed.com/courses/data-analyst",
+    "availability": "https://schema.org/InStock",
+    "priceCurrency": "INR"
+  }
 }
-</script>
 
-
-    <!-- End SEO -->
-    <title>Binformed | Master Data Analytics</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
           extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#4F46E5',
+                '50': '#EEF2FF',
+                '100': '#E0E7FF',
+                '200': '#C7D2FE',
+                '300': '#A5B4FC',
+                '400': '#818CF8',
+                '500': '#6366F1',
+                '600': '#4F46E5',
+                '700': '#4338CA',
+                '800': '#3730A3',
+                '900': '#312E81',
+                '950': '#1E1B4B'
+              },
+              secondary: {
+                DEFAULT: '#14B8A6',
+                '50': '#F0FDFA',
+                '100': '#CCFBF1',
+                '200': '#99F6E4',
+                '300': '#5EEAD4',
+                '400': '#2DD4BF',
+                '500': '#14B8A6',
+                '600': '#0D9488',
+                '700': '#0F766E',
+                '800': '#115E59',
+                '900': '#134E4A',
+                '950': '#042f2e'
+              }
+            },
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
+              heading: ['Poppins', 'sans-serif'],
             },
-            colors: {
-              brand: {
-                50: '#eff6ff',
-                100: '#dbeafe',
-                500: '#3b82f6',
-                600: '#2563eb',
-                700: '#1d4ed8',
-                800: '#1e40af',
-                900: '#1e3a8a',
-              }
-            }
           }
         }
       }
     </script>
-    <style>
-      /* Smooth scrolling for anchor links */
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        background-color: #0f172a; /* Slate 900 */
-        color: white;
-      }
-    </style>
-
+  
+<link rel="stylesheet" href="/index.css">
 </head>
-  <body>
+  <body class="bg-gray-50 text-gray-800 font-sans">
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
